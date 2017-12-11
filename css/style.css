@@ -271,7 +271,7 @@ transform: scale(2);
 /*********************************7部*/
 @media (min-width: 992px){
 #step .col-12{
-	background-image: url(../images/aibg3.jpg);
+	background-image: url(https://i.imgur.com/mOHMbFn.jpg);
 	background-size: cover;
     background-attachment: fixed;
 	padding: 0;
@@ -531,7 +531,7 @@ transform: scale(2);
 }
 	
 #stepphone{
-		background-image: url("../images/aibg3.jpg");
+		background-image: url("https://i.imgur.com/mOHMbFn.jpg");
 		margin-bottom: 500px;
 	}
 
