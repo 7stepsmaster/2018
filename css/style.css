@@ -559,12 +559,12 @@ header.jumbotron h5 {
 header.jumbotron p{
 	
 	padding-top: 5px;
-	 margin-left: 40%;
+	 margin-left: 30%;
 	
 }
 a.btn-cta-primary,
 .btn-cta-primary {
- margin-left: 40%;
+ margin-left: 30%;
   margin-top: 15px;/*按鈕與上字之距離*/
   text-align: center;
 }
