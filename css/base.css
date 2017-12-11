@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.box10 { padding: 0; height: 100vh; margin: 0px; }
+.voice_2 { width: 100vw;}
+.voice_2 ul li { float: left; display: inline; height:100vh; color: #fff; cursor: pointer; position: relative;}
+.voice_2 ul li.li1 { background: #4a9ebd}
+.voice_2 ul li.li2 { background: #4abdb9}
+.voice_2 .fold { width: 100px; height: 100%; text-align: center; }
+.voice_2 .fold .img { display: block; background: url("img/icon.png") 0 0 no-repeat; }
+.voice_2 .li1 .fold .img { background-position: -482px -181px; width: 56px; height: 113px; margin: 236px 20px 20px 20px;}
+
+.voice_2 .fold .txt { font-size: 24px; display: block; width: 25px; font-weight: normal; margin: 0px 38px; line-height: 25px;}
+.voice_2 .unfold { width: 680px; height: 100%; display: none; }
+.voice_2 .unfold dl { margin: 50px 60px 0px 60px;}
+.voice_2 .unfold dt { width: 100%; text-align: center; margin-bottom: 40px;}
+.voice_2 .unfold dd { font-size: 18px; line-height: 35px;}
+.voice_2 .unfold dd b { font-size: 30px; font-weight: normal;}
+.voice_2 .unfold dd b a { font-size: 14px; display: inline-block; color: #fff; margin-left: 40px;}
