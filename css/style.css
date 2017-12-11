@@ -349,7 +349,7 @@ transform: scale(2);
 	height: 10vh;
 	padding-left: 25px;
 	padding-top: 20px;
-	font-size: 8px;
+	font-size: 20px;
 	border-bottom-color: rgba(241,238,238,0.3);
 	border-left-color: transparent;
 }
@@ -630,7 +630,7 @@ a.btn-cta-primary,
 	background-color: transparent;
 	color: white;
 	height: 12vh;
-	font-size: 18px;
+	font-size: 12px;
 	border-bottom-color: rgba(241,238,238,0.3);
 	border-left-color: transparent;
 	line-height:6vh;
