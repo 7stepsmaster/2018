@@ -548,6 +548,10 @@ transform: scale(2);
 	
 #step{display: none;}
 .nextstep{display: none;}
+#stepphone{
+		margin: 0;
+	}	
+
 header.jumbotron h5 {
   margin-top: 5vh;
   width: 100%;
@@ -564,8 +568,6 @@ a.btn-cta-primary,
   margin-top: 15px;/*按鈕與上字之距離*/
   text-align: center;
 }
-
-
  .btn-link {
   color: #fff;
   font-weight: bold;
@@ -577,7 +579,128 @@ a.btn-cta-primary,
   text-decoration: none;
 }
 
- 
+/*七部*/
+.col-12 .font{
+	margin-bottom: 5vh;
+	margin-top: 5vh;
+}
+.col-12 h1{
+	color: white;
+	font-size: 2em;
+}
+.col-12 h3{
+	color: white;
+	letter-spacing: 3px;
+	display: inline;
+	font-size: 1em;
+}
+.col-sm-12{
+	height: 100%;
+	margin-bottom: 5vh;
+}
+.col-sm-12 nav{
+	margin-bottom: 1vh;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	}
 
+	
+.tab-content img{
+	position: relative;
+	text-align: center;
+	width: 90%;
+	border: solid #F45A47 3px;
+	border-radius: 5px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#navbarTESTContent_phone{
+		height: 87vh;
+	}
+#navbarTESTContent_phone .list-group{
+	align-items:baseline;
+	width: 90%;
+	border-radius: 5px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#navbarTESTContent_phone .list-group-item{
+	background-color: transparent;
+	color: white;
+	height: 12vh;
+	font-size: 18px;
+	border-bottom-color: rgba(241,238,238,0.3);
+	border-left-color: transparent;
+	line-height:6vh;
+}
+
+#navbarTESTContent_phone .list-group-item.active{
+	background-color: #F45A47;
+    border-color: #F45A47;
+	color: black;
+	font-weight: bold;
+}
+
+#navbarTESTContent_phone .btn-primary{
+	background-color: grey;
+    border-color: grey;
+	cursor:pointer;
+	position: absolute;
+	right: 1.5em;
+}
+
+.pic {
+	background-color: grey;
+	margin: 0;
+	padding: 0;
+}
+
+#product img{
+		margin-top:5vh;
+	}
+	
+.pic .picshow{
+	padding-top:3vh;
+	width: 90%;
+	padding-left: 15%;
+	padding-right: 5%;
+}
+.mask {
+	
+	position: relative;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all  0.5s linear;
+	transition: all  0.5s linear;
+}
+.mask .overlay {
+	
+	display: block;
+	position: absolute;
+	width:80%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	opacity: 0.5;
+		-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all  0.4s linear;
+	transition: all  0.4s linear;
+}
+.mask img	{
+		-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all  0.4s linear;
+	transition: all  0.4s linear;
+	}
+.mask:hover .overlay {
+	opacity: 0.1;
+	width: 80%;
+	height: 100%;
+	
+}
 	
 }
