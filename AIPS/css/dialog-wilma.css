@@ -1,0 +1,256 @@
+/*基本*/
+
+
+.button-wrap a, button {
+	color: #74716D;
+	text-decoration: none;
+	outline: none;
+}
+
+
+.button-wrap button {
+	
+	outline: none;
+	border: none;
+    background: #344251;
+    color: #F45A47;
+    padding: 5px 25px;
+    text-align: center;
+    font-size: 1.25em;
+    text-decoration: none;
+	-moz-transform: skewX(-20deg);
+	-webkit-transform: skewX(-20deg);
+	-o-transform: skewX(-20deg);
+	-ms-transform: skewX(-20deg);
+	transform: skewX(-20deg);
+}
+
+.button-wrap button.trigger {/*Chapter按鈕*/
+	margin-top:0.7em;
+	margin-left: 0.5em;
+	background: #344251;
+	color: #F45A47;
+	border: none;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+
+.button-wrap button.trigger:hover {/*Chapter按鈕*/
+	background: rgba(69,199,189,0.9);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	
+	
+}
+
+#chapterclose{
+	position: absolute;
+	top: 0;
+	right: 0;
+    background: rgba(0,0,0,0.8);
+	font-size: 1.5em;
+	color: aliceblue;
+    width: 10%;
+    height: 10%;
+}
+
+.dialog,
+.dialog__overlay {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.dialog {
+	position: fixed;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	pointer-events: none;
+	
+}
+
+.dialog__overlay {
+	position: absolute;
+	z-index: 1;
+	background: rgba(55, 58, 71, 0.9);
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	-webkit-backface-visibility: hidden;
+}
+
+.dialog--open .dialog__overlay {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.dialog__content {
+	width: 80%;
+	max-width: 560px;
+	min-width: 290px;
+	background: #fff;
+	padding: 4em;
+	text-align: center;
+	position: relative;
+	z-index: 900000000;
+	opacity: 0;
+}
+
+.dialog--open .dialog__content {
+	pointer-events: auto;
+}
+
+/* Content */
+.dialog h2  {
+	color: #f45a47;
+	margin-left: auto;
+	margin-right: auto;/*置中*/
+	font-size: 2em;
+	width: 30%;
+	font-family: 微軟正黑體;
+	border-bottom: solid 2px rgba(244,90,71,0.7);
+	border-top: solid 2px rgba(244,90,71,0.7);
+}
+#pstext{
+	color: #A4EAFA;
+	margin-left: auto;
+	margin-right: auto;/*置中*/
+	font-size: 2em;
+	width: 30%;
+	font-family: 微軟正黑體;
+	border-bottom: solid 2px  rgba(164,234,250,0.7);
+	border-top: solid 2px rgba(164,234,250,0.7);
+}
+.dialog h4 a{
+	color: white;
+	font-size: 1.2em;
+	font-family: 微軟正黑體;
+	text-decoration: none;
+	font-weight:lighter;
+}
+.aichapter a:hover {
+	color: rgba(244,90,71,0.9);
+}
+
+.pschapter a:hover {
+	color: rgba(164,234,250,0.9);
+}
+
+/*基本end*/
+.dialog--open .dialog__overlay {
+	-webkit-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+
+.dialog--close .dialog__overlay {
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+
+.dialog__content {
+	padding: 0;
+	background: transparent;
+}
+
+.dialog.dialog--open .dialog__content {
+	opacity: 1;
+}
+
+.morph-shape {
+	position: absolute;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	top: -2px;
+	left: -2px;
+	z-index: -1;
+}
+
+.morph-shape svg rect {/*對話框邊框*/
+	stroke: #141715;
+	stroke-width: 2px;
+	stroke-dasharray: 1680;
+}
+
+.dialog--open .morph-shape svg rect {
+	-webkit-animation: anim-dash 0.6s forwards;
+	animation: anim-dash 0.6s forwards;
+}
+
+.dialog-inner {
+	opacity: 0;
+	background: #141715;
+}
+
+.dialog--open .dialog-inner {
+	padding: 1em;
+	opacity: 1;
+	-webkit-transition: opacity 0.85s 0.35s;
+	transition: opacity 0.85s 0.35s;
+}
+
+.dialog.dialog--open h2 {
+	-webkit-animation: anim-elem-1 0.7s ease-out both;
+	animation: anim-elem-1 0.7s ease-out both;
+}
+
+.dialog.dialog--open h4 {
+	-webkit-animation: anim-elem-1 0.7s ease-out both;
+	animation: anim-elem-1 0.7s ease-out both;
+}
+
+.dialog.dialog--open button {
+	-webkit-animation: anim-elem-2 0.7s ease-out both;
+	animation: anim-elem-2 0.7s ease-out both;
+}
+
+@keyframes anim-dash {
+	0% {
+		stroke-dashoffset: 1680;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+@-webkit-keyframes anim-dash {
+	0% {
+		stroke-dashoffset: 1680;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+/* Inner elements animations */
+
+@-webkit-keyframes anim-elem-1 {
+	0% { opacity: 0; -webkit-transform: translate3d(-150px, 0, 0); }
+	100% { opacity: 1; -webkit-transform: translate3d(0, 0, 0); }
+}
+
+@keyframes anim-elem-1 {
+	0% { opacity: 0; -webkit-transform: translate3d(-150px, 0, 0); transform: translate3d(-150px, 0, 0); }
+	100% { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+}
+
+@-webkit-keyframes anim-elem-2 {
+	0% { opacity: 0; -webkit-transform: translate3d(150px, 0, 0); }
+	100% { opacity: 1; -webkit-transform: translate3d(0, 0, 0); }
+}
+
+@keyframes anim-elem-2 {
+	0% { opacity: 0; -webkit-transform: translate3d(150px, 0, 0); transform: translate3d(150px, 0, 0); }
+	100% { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+}
