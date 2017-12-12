@@ -315,9 +315,10 @@ transform: scale(2);
 .col-md-4 h2{
 	letter-spacing: 1em;
 	color: white;
-	text-align: center;
 	font-size: 1.8em;
 	margin-bottom: 0.3em;
+	margin-left: 45%;
+	
 	}
 
 .col-md-2 h2{
@@ -325,6 +326,7 @@ transform: scale(2);
 	color: #F45A47;
 	font-size: 1.8em;
 	margin-bottom: 0.3em;
+	margin-left: 5%;
 	}	
 	
 .tab-content img{
