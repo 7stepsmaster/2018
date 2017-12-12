@@ -329,8 +329,8 @@ transform: scale(2);
 	
 .tab-content img{
 	position: absolute;
-	right: 0;
-	height: 77vh;
+	right: 3%;
+	width: 75%;
 	border: solid #F45A47 3px;
 	border-radius: 5px;
 }
