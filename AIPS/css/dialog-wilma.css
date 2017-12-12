@@ -46,7 +46,11 @@
 	-ms-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
-	
+	-moz-transform: skewX(0deg);
+	-webkit-transform: skewX(0deg);
+	-o-transform: skewX(0deg);
+	-ms-transform: skewX(0deg);
+	transform: skewX(0deg);
 	
 }
 
