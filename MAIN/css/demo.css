@@ -430,12 +430,12 @@ a:focus {
   border: transparent;
   overflow: hidden;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 2em;
   outline: none;
   color: #A4EAFA;
   background: transparent;
   font-family: 'raleway', sans-serif;
-  right: 0;
+  right: 5%;
   bottom: 15%;
 }
 
@@ -453,6 +453,10 @@ a:focus {
 
 .button:before,
 .button:after {
+  font-family: 微軟正黑體;
+  font-size: 0.8em;
+  color: white;
+  background: #414141;
   content: '';
   position: absolute;
   top: 0.67em;
@@ -538,13 +542,13 @@ a:focus {
   border: transparent;
   overflow: hidden;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 2em;
   outline: none;
   color: #F45A47;
   background: transparent;
   font-family: 'raleway', sans-serif;
-  right: 5%;
-  bottom: 7%;
+  right: 10%;
+  bottom: 8%;
 }
 
 .button_2 span {
@@ -561,6 +565,10 @@ a:focus {
 
 .button_2:before,
 .button_2:after {
+  font-family: 微軟正黑體;
+  font-size: 0.8em;
+  color: white;
+  background: #414141;
   content: '';
   position: absolute;
   top: 0.67em;
