@@ -32,6 +32,7 @@ a:focus {
 
 /* Icons */
 .icon {
+	color: black;
 	display: block;
 	width: 1.5em;
 	height: 1.5em;
@@ -256,9 +257,7 @@ a:focus {
 	width: 30vw;
 }
 
-.column__title {
-	color: #ff764b;
-}
+
 
 .column__text {
 	position: absolute;
@@ -648,3 +647,15 @@ a:focus {
   transition-delay: 0s;
 }
 
+.Exhibition{
+ position: absolute;
+    top: 0;
+    left: 60px;
+	padding-left: 10%;
+	padding-right: 10%: 
+}
+.about{
+	position: absolute;
+    top: -15%;
+	right: 0;
+}
