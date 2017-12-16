@@ -455,6 +455,7 @@ a:focus {
 .button:after {
   font-family: 微軟正黑體;
   font-size: 0.8em;
+  letter-spacing: 0.2em;
   color: white;
   background: #414141;
   content: '';
@@ -567,6 +568,7 @@ a:focus {
 .button_2:after {
   font-family: 微軟正黑體;
   font-size: 0.8em;
+  letter-spacing: 0.2em;
   color: white;
   background: #414141;
   content: '';
