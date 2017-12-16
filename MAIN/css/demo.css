@@ -1,0 +1,640 @@
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Avenir Next', Avenir, Helvetica, Arial, sans-serif;
+	color: #393a3e;
+	background: lavender;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: #1d48f3;
+}
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+/* Icons */
+.icon {
+	display: block;
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0 auto;
+	fill: currentColor;
+}
+
+.view {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	overflow: hidden;
+	height: 100vh;
+	margin: 0 0 0 215px;
+}
+
+.content {
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	padding: 25px 50px;
+	background-size: auto 100%;
+}
+
+.deco__text {
+	font-size: 0.8em;
+	line-height: 1;
+	margin: 0;
+	color: #bcb8e8;
+}
+
+/* Header */
+
+/* Top Navigation Style */
+.codrops-links {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	white-space: nowrap;
+}
+
+.codrops-icon {
+	display: block;
+}
+
+.codrops-icon:last-child {
+	margin: 0 0 0 2em;
+}
+
+.btn {
+	border: none;
+	background: none;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn--back {
+	font-size: 1.5em;
+	position: absolute;
+	z-index: 1002;
+	top: 1em;
+	right: 1em;
+	opacity: 0;
+	color: #1d48f3;
+}
+
+.btn--menu {
+	font-size: 0.85em;
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	display: none;
+	margin: 10px 0 0 6px;
+}
+
+.btn--menu-active .icon--menu,
+.icon--cross {
+	display: none;
+}
+
+.btn--menu-active .icon--cross {
+	display: block;
+}
+
+/* Demo links */
+.demos {
+	display: flex;
+	align-items: center;
+	margin: 2em 0 0 auto;
+}
+
+.demos__text {
+	font-size: 0.8em;
+	display: block;
+	margin: 0 2em 0 0;
+	color: #bcb8e8;
+}
+
+.demo {
+	position: relative;
+	display: block;
+	margin: 0 0 0 1.5em;
+}
+
+.demo:hover,
+.demo:focus {
+	outline: none;
+}
+
+.demo--current {
+	pointer-events: none;
+	color: #fff;
+}
+
+.demo--current::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	width: 32px;
+	height: 32px;
+	margin: -17px 0 0 -16px;
+	border-radius: 50%;
+	background: #1d48f3;
+}
+/* Content */
+.tabscontent {
+	pointer-events: none;
+}
+
+.tabscontent__item {
+	position: fixed;
+	z-index: 1001;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	opacity: 0;
+}
+
+.tabscontent__item--current,
+.tabscontent__item--current ~ .btn--back {
+	pointer-events: auto;
+}
+
+.poster {
+	position: relative;
+	height: 80vh;
+	margin: 10vh auto;
+	padding: 0 50px;
+	pointer-events: none;
+}
+
+.poster__img {
+	position: relative;
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+}
+
+.poster__caption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 0 50px;
+}
+
+.poster__box {
+	position: absolute;
+	top: -50px;
+	left: 0;
+	width: 50%;
+	height: 40%;
+	border: 10px solid;
+}
+
+.poster__number {
+	font-size: 5em;
+	font-weight: bold;
+	line-height: 0.7;
+	position: absolute;
+	bottom: 0;
+	left: calc(100% - 50px + 5px);
+	color: lavender;
+}
+
+.poster__title {
+	font-size: 6em;
+	line-height: 0.7;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin: 0 0 -0.25em 0.15em;
+	text-indent: -0.75em;
+}
+
+.poster__deco {
+	font-size: 2em;
+	line-height: 1;
+	margin: 0 -1.25em 0 auto;
+	color: #1d48f3;
+
+	writing-mode: vertical-rl;
+}
+
+.column {
+	width: 30vw;
+}
+
+.column__title {
+	color: #ff764b;
+}
+
+.column__text {
+	position: absolute;
+	top: 0;
+	margin: 0;
+	
+}
+
+/* Individual demos */
+.demo-2 {
+	background: white;
+}
+
+.demo-2 .view {
+	margin-left: 150px;
+}
+
+.demo-2 .content {
+	background-image:url(../img/aips2-19.png);
+	background-size: cover;
+}
+
+.demo-2 .codrops-header__info::after {
+	content: '02';
+	color: #fff;
+}
+
+.demo-2 .codrops-header__deco,
+.demo-2 a:hover,
+.demo-2 a:focus {
+	color: #ff764b;
+}
+
+.demo-2 .deco__text,
+.demo-2 .demos__text {
+	color: #d8c184;
+}
+
+.demo-2 .demo--current::before {
+	background: #ff764b;
+}
+
+.demo-2 .btn--back {
+	color: #ff764b;
+}
+
+.box {
+	position: relative;
+	width: 40vw;
+	min-width: 300px;
+	height: calc(90vh - 120px);
+	margin-top: 40px;
+	background-size: cover;
+	background-position: 50% 0;
+}
+
+.box__title {
+	font-size: 6em;
+	position: absolute;
+	bottom: 0;
+	left: -1em;
+	margin: 0;
+	color: #fff;
+}
+.tabscontent__item_1{
+	background-image: url(../img/aips2-18.png);
+}
+
+@media screen and (max-width: 40em) {
+	/*
+	.demo-2{background: url(../img/aips2-18.png);}
+	
+	.logo{
+		display: none;
+	}        手機板*/
+	.view {
+		overflow: auto;
+		height: auto;
+		min-height: calc(100vh - 69px);
+		margin: 0;
+	}
+	
+	.content {
+		flex-direction: column;
+		padding: 10px;
+	}
+	.codrops-header__info {
+		font-size: 1.15em;
+	}
+	.deco__text,
+	.demos__text {
+		display: none;
+	}
+	.codrops-links {
+		margin: 0 0 1em;
+	}
+	.codrops-icon {
+		font-size: 1em;
+	}
+	.codrops-header__deco {
+		font-size: 1.25em;
+	}
+	.codrops-header__title {
+		font-size: 5.5em;
+		margin: 0 -4px;
+	}
+	.codrops-header__tagline {
+		width: auto;
+	}
+	.demos {
+		align-items: flex-start;
+		margin-top: 1em;
+	}
+	.codrops-header__info::after {
+		font-size: 7em;
+	}
+	.poster__box {
+		top: -20px;
+		left: 30px;
+		width: 30%;
+		height: 30%;
+		border: 7px solid;
+	}
+	.poster__deco {
+		font-size: 1em;
+	}
+	.poster__number {
+		font-size: 2em;
+		left: calc(100% - 90px);
+	}
+	.poster__title {
+		font-size: 3em;
+	}
+	.btn--back {
+		top: 0;
+		right: 0;
+	}
+	.btn--menu {
+		display: block;
+	}
+	.demo-2 .btn--menu {
+		position: relative;
+		margin: 0 2em 0 0;
+	}
+	.demo-2 .tabscontent__item {
+		font-size: 0.575em;
+		flex-direction: column;
+	}
+	.column__title {
+		margin: 1em 0 0;
+	}
+	
+}
+
+
+/*1216*/
+.logo{
+	position: absolute;
+	left: 0;
+	margin-left: 25%;
+	margin-top: 15%;
+}
+/* .button */
+.button {
+  display: inline-block;
+  position: absolute;
+  margin: 1em;
+  padding: 0.67em;
+  border: transparent;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 1.5em;
+  outline: none;
+  color: #A4EAFA;
+  background: transparent;
+  font-family: 'raleway', sans-serif;
+  right: 0;
+  bottom: 15%;
+}
+
+.button span {
+	letter-spacing: 0.2em;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.button:before,
+.button:after {
+  content: '';
+  position: absolute;
+  top: 0.67em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: .4s,opacity .6s;
+  -moz-transition: .4s,opacity .6s;
+  -o-transition: .4s,opacity .6s;
+  transition: .4s,opacity .6s;
+}
+
+/* :before */
+.button:before {
+  content: attr(data-hover);
+  -webkit-transform: translate(-150%, 0);
+  -moz-transform: translate(-150%, 0);
+  -ms-transform: translate(-150%, 0);
+  -o-transform: translate(-150%, 0);
+  transform: translate(-150%, 0);
+}
+
+/* :after */
+.button:after {
+  content: attr(data-active);
+  -webkit-transform: translate(150%, 0);
+  -moz-transform: translate(150%, 0);
+  -ms-transform: translate(150%, 0);
+  -o-transform: translate(150%, 0);
+  transform: translate(150%, 0);
+}
+
+/* Span on :hover and :active */
+.button:hover span,
+.button:active span {
+  opacity: 0;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -o-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+/*  
+    We show :before pseudo-element on :hover 
+    and :after pseudo-element on :active 
+*/
+.button:hover:before,
+.button:active:after {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+
+/* 
+  We hide :before pseudo-element on :active
+*/
+.button:active:before {
+  -webkit-transform: translate(-150%, 0);
+  -moz-transform: translate(-150%, 0);
+  -ms-transform: translate(-150%, 0);
+  -o-transform: translate(-150%, 0);
+  transform: translate(-150%, 0);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+/* .button 2*/
+.button_2 {
+  display: inline-block;
+  position: absolute;
+  margin: 1em;
+  padding: 0.67em;
+  border: transparent;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 1.5em;
+  outline: none;
+  color: #F45A47;
+  background: transparent;
+  font-family: 'raleway', sans-serif;
+  right: 5%;
+  bottom: 7%;
+}
+
+.button_2 span {
+	letter-spacing: 0.2em;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.button_2:before,
+.button_2:after {
+  content: '';
+  position: absolute;
+  top: 0.67em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: .4s,opacity .6s;
+  -moz-transition: .4s,opacity .6s;
+  -o-transition: .4s,opacity .6s;
+  transition: .4s,opacity .6s;
+}
+
+/* :before */
+.button_2:before {
+  content: attr(data-hover);
+  -webkit-transform: translate(-150%, 0);
+  -moz-transform: translate(-150%, 0);
+  -ms-transform: translate(-150%, 0);
+  -o-transform: translate(-150%, 0);
+  transform: translate(-150%, 0);
+}
+
+/* :after */
+.button_2:after {
+  content: attr(data-active);
+  -webkit-transform: translate(150%, 0);
+  -moz-transform: translate(150%, 0);
+  -ms-transform: translate(150%, 0);
+  -o-transform: translate(150%, 0);
+  transform: translate(150%, 0);
+}
+
+/* Span on :hover and :active */
+.button_2:hover span,
+.button_2:active span {
+  opacity: 0;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -o-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+/*  
+    We show :before pseudo-element on :hover 
+    and :after pseudo-element on :active 
+*/
+.button_2:hover:before,
+.button_2:active:after {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+
+/* 
+  We hide :before pseudo-element on :active
+*/
+.button_2:active:before {
+  -webkit-transform: translate(-150%, 0);
+  -moz-transform: translate(-150%, 0);
+  -ms-transform: translate(-150%, 0);
+  -o-transform: translate(-150%, 0);
+  transform: translate(-150%, 0);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
