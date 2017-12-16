@@ -659,3 +659,24 @@ a:focus {
     top: -15%;
 	right: 0;
 }
+.slogan{
+	z-index: 2000;
+	font-family: 微軟正黑體;
+	color: white;
+	font-size: 2em;
+	position: absolute;
+	top: 10%;
+	right: 10%;
+}
+.about_text{
+	z-index: 2000;
+	font-family: 微軟正黑體;
+	font-size: 1.2em;
+	display: block;
+	width: 60%;
+	letter-spacing: 0.2em;
+	line-height: 1.5em;
+	position: absolute;
+	bottom: 12%;
+	right: 10%;
+}
