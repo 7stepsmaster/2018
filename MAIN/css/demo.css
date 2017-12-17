@@ -657,15 +657,15 @@ a:focus {
 
 .Exhibition{
  position: absolute;
-    top: 0;
-    left: 60px;
-	padding-left: 10%;
-	padding-right: 10%: 
+   bottom: 10%;
+   right: 100px;
+	
 }
 .Team{
- position: absolute;
-    bottom: 0;
+    position: absolute;
+    bottom: 0px;
     left: 60px;
+	
 }
 .about{
 	position: absolute;
@@ -691,6 +691,6 @@ a:focus {
 	letter-spacing: 0.2em;
 	line-height: 1.5em;
 	position: absolute;
-	bottom: 25%;
+	top: 45%;
 	right: 10%;
 }
