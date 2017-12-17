@@ -418,7 +418,7 @@ a:focus {
 	position: absolute;
 	left: 0;
 	margin-left: 25%;
-	margin-top: 15%;
+	top: 30%;
 }
 /* .button */
 .button {
