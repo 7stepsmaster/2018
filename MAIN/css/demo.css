@@ -657,8 +657,8 @@ a:focus {
 
 .Exhibition{
  position: absolute;
-   bottom: 10%;
-   right: 100px;
+  bottom: 0;
+  left: 60px;
 	
 }
 .Team{
