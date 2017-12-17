@@ -56,12 +56,12 @@
 
 #chapterclose{
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	right: 0;
     background: rgba(0,0,0,0.8);
 	font-size: 1.5em;
 	color: aliceblue;
-    width: 10%;
+    width: 15%;
     height: 10%;
 }
 
