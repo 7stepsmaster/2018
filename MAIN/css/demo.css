@@ -654,6 +654,13 @@ a:focus {
 	padding-left: 10%;
 	padding-right: 10%: 
 }
+.Team{
+ position: absolute;
+    top: 0;
+    left: 60px;
+	padding-left: 10%;
+	padding-right: 10%: 
+}
 .about{
 	position: absolute;
     top: -15%;
