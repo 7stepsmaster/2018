@@ -278,6 +278,8 @@ a:focus {
 .demo-2 .content {
 	background-image:url(../img/aips2-19.png);
 	background-size: cover;
+	align-items: center;
+    justify-content: center;
 }
 
 .demo-2 .codrops-header__info::after {
@@ -414,12 +416,7 @@ a:focus {
 
 
 /*1216*/
-.logo{
-	position: absolute;
-	left: 0;
-	margin-left: 25%;
-	top: 30%;
-}
+
 /* .button */
 .button {
   display: inline-block;
