@@ -340,10 +340,16 @@ a:focus {
 	.view {
 		overflow: auto;
 		height: auto;
-		min-height: calc(100vh - 69px);
+		min-height: calc(100vh);
 		margin: 0;
 	}
-	
+	.demo-2 {
+	background-image: url(../img/aips2-20.png);
+		background-size: contain;
+	}
+	.demo-2 .content {
+		background-image:none;
+	}
 	.content {
 		flex-direction: column;
 		padding: 10px;
@@ -414,6 +420,23 @@ a:focus {
 		margin: 1em 0 0;
 	}
 	
+	.button {
+  display: inline-block;
+  position: absolute;
+  margin: 1em;
+  padding: 0.67em;
+  border: transparent;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 2em;
+  outline: none;
+  color: #45CFFF;
+  background: transparent;
+  font-family: 'raleway', sans-serif;
+  right: 5%;
+  bottom: 15%;
+}
+
 }
 
 
@@ -435,11 +458,6 @@ a:focus {
   font-family: 'raleway', sans-serif;
   right: 5%;
   bottom: 15%;
-}
-.psicon{
-  position: absolute;
-  right: 5%;
-  bottom: 27%;
 }
 .button span {
 	letter-spacing: 0.2em;
