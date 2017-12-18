@@ -254,7 +254,9 @@ a:focus {
 }
 
 .column {
-	width: 30vw;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -653,10 +655,8 @@ a:focus {
 }
 
 .Exhibition{
- position: absolute;
-  bottom: 0;
-  left: 50px;
-	
+  position: absolute;
+    left: 60px;
 }
 .Team{
     position: absolute;
