@@ -4,7 +4,6 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
 body {
 	font-family: 'Avenir Next', Avenir, Helvetica, Arial, sans-serif;
 	color: #393a3e;
@@ -39,6 +38,15 @@ a:focus {
 	margin: 0 auto;
 	fill: currentColor;
 }
+#about_phone{
+	display: none;
+}
+.Exhibition_phone{
+	display: none;
+}
+.Team_phone{
+		display: none;
+	}
 
 .view {
 	position: relative;
@@ -333,19 +341,46 @@ a:focus {
 @media screen and (max-width: 40em) {
 	/*
 	.demo-2{background: url(../img/aips2-18.png);}
-	
-	.logo{
+	*/
+	#logo{
 		display: none;
-	}        手機板*/
+	}    
+	#about_phone{
+		display: block;
+	}
+	.about{
+		display: none;
+	}
+	p.about_text{
+		display: none;
+	}
+	.slogan{
+		display: none;
+	}
+	.Exhibition{
+		display: none;
+	}
+	.Exhibition_phone{
+		display: block;
+	}
+	.Team{
+		display: none;
+	}
+	.Team_phone{
+		display: block;
+	}
+	
+	
 	.view {
 		overflow: auto;
 		height: auto;
 		min-height: calc(100vh);
 		margin: 0;
+
 	}
 	.demo-2 {
-	background-image: url(../img/aips2-20.png);
-		background-size: contain;
+		background-image: url(https://i.imgur.com/DSEqlIb.png);
+		background-size: cover;
 	}
 	.demo-2 .content {
 		background-image:none;
