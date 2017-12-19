@@ -47,6 +47,15 @@ a:focus {
 .Team_phone{
 		display: none;
 	}
+.ps_phone{
+	display: none;
+}
+.ai_phone{
+	display: none;
+}
+.clickme{
+	display: none;
+}
 
 .view {
 	position: relative;
@@ -369,6 +378,22 @@ a:focus {
 	.Team_phone{
 		display: block;
 	}
+	#ai{
+		display: none;
+	}
+	#ps{
+		display: none;
+	}
+	.ps_phone{
+	display: block;
+	}
+	.ai_phone{
+		display: block;
+	}
+	.clickme{
+		display: block;
+	}
+	
 	
 	
 	.view {
@@ -384,6 +409,8 @@ a:focus {
 	}
 	.demo-2 .content {
 		background-image:none;
+		align-items:left;
+    justify-content: left;
 	}
 	.content {
 		flex-direction: column;
@@ -454,23 +481,9 @@ a:focus {
 	.column__title {
 		margin: 1em 0 0;
 	}
+
 	
-	.button {
-  display: inline-block;
-  position: absolute;
-  margin: 1em;
-  padding: 0.67em;
-  border: transparent;
-  overflow: hidden;
-  text-decoration: none;
-  font-size: 2em;
-  outline: none;
-  color: #45CFFF;
-  background: transparent;
-  font-family: 'raleway', sans-serif;
-  right: 5%;
-  bottom: 15%;
-}
+	
 
 }
 
@@ -743,4 +756,26 @@ a:focus {
 	position: absolute;
 	top: 45%;
 	right: 10%;
+}
+
+.ai_phone{
+	color: #ff6d25;
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    font-size: 2.5em;
+}
+.ps_phone{
+color: #48abff;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    font-size: 2.5em;
+}
+
+.clickme{
+	position: fixed;
+    top: 0;
+    left: 20%;
+    z-index: 5000;
 }
