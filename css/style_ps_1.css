@@ -157,7 +157,7 @@ transform: scale(1.3) translateY(15px);
 	padding: 10px;/*li距離*/
 }
 .dropdown-menu{
-	background-color:rgba(180,180,180,0.6);
+	background-color:white;
 	z-index: 100;
 }
 .dropdown-item:active{
@@ -461,6 +461,7 @@ transform: scale(2);
 	height: 100%;
 	
 }
+
 }
 
 /*FOOTER*/
@@ -497,7 +498,7 @@ transform: scale(2);
 	padding: 10px;/*li距離*/
 }
 .dropdown-menu{
-	background-color:rgba(244,90,71,1);
+	background-color:#79D8E8;
 }
 
 .dropdown-item:active{
@@ -559,11 +560,11 @@ a.btn-cta-primary,
 	margin-top: 5vh;
 }
 .col-12 h1{
-	color: white;
+	color: black;
 	font-size: 2em;
 }
 .col-12 h3{
-	color: white;
+	color: black;
 	letter-spacing: 3px;
 	display: inline;
 	font-size: 1em;
@@ -602,7 +603,7 @@ a.btn-cta-primary,
 
 #navbarTESTContent_phone .list-group-item{
 	background-color: transparent;
-	color: white;
+	color: black;
 	height: 12vh;
 	font-size: 12px;
 	border-bottom-color: rgba(241,238,238,0.3);
@@ -613,7 +614,7 @@ a.btn-cta-primary,
 #navbarTESTContent_phone .list-group-item.active{
 	background-color: #79D8E8;;
     border-color: #79D8E8;;
-	color: black;
+	color: white;
 	font-weight: bold;
 }
 
@@ -658,7 +659,7 @@ a.btn-cta-primary,
 	top: 0;
 	left: 0;
 	background-color: #000;
-	opacity: 0.5;
+	opacity: 0.3;
 		-webkit-transition: all 0.4s linear;
 	-moz-transition: all 0.4s linear;
 	-o-transition: all  0.4s linear;
@@ -802,22 +803,25 @@ a.btn-cta-primary,
 	width: 50%;
 	position: absolute;
 	right:10%;
-	border: solid rgba(211,211,211,0.3) 1px;
+	border: solid rgba(121,216,232,0.7) 1px;
 	border-radius: 5px;	
 	align-items:baseline;	
 	
 }
 #navbarTESTContent2 .list-group-item{
-	background-color:rgba(225,225,225,0.7);
+	background-color:rgba(255,255,255,0.7);
 	width: 100%;
 	margin: 0;
-	padding-left: 20px;
+	padding-left: 15px;
 	padding-right: 20px;
 	padding-top: 1.5px;
 	padding-bottom: 1.5px;
 	}
 #navbarTESTContent2	.list-group-item.active{
-	border-color:transparent;
+	border-top-color:rgba(211,211,211,0.9);
+	border-bottom-color:rgba(211,211,211,0.9);
+	border-left-color: rgba(121,216,232,0.7);
+	border-right-color: rgba(121,216,232,0.7);
 	} 
 #navbarTESTContent2 img{
 	width: 32px;
@@ -876,7 +880,7 @@ a.btn-cta-primary,
 	top: 0;
 	left: 0;
 	background-color: #000;
-	opacity: 0.5;
+	opacity: 0.3;
 		-webkit-transition: all 0.4s linear;
 	-moz-transition: all 0.4s linear;
 	-o-transition: all  0.4s linear;
@@ -894,6 +898,9 @@ a.btn-cta-primary,
 	height: 100%;
 	
 }	
+	.dropdown-menu{
+	background-color:#79D8E8;
+}
 	
 	
 }	
