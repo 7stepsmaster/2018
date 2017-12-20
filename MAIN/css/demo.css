@@ -355,7 +355,7 @@ a:focus {
 	#about_phone{
 		display: block;
 		position: absolute;
-		top: 0;
+		top: -10%;
 		right: 0;
 	}
 	.about{
