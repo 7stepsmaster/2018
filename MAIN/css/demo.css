@@ -374,8 +374,8 @@ a:focus {
     position: absolute;
     line-height: 1.2em;
     top: 28%;
-    left: 45%;
-    letter-spacing: 0.2em;
+    left: 42%;
+    letter-spacing: 0.15em;
 }
 
 @media (max-width: 767px){
