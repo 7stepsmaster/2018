@@ -368,13 +368,14 @@ a:focus {
 
 .slogan{
 	z-index: 2000;
-	font-family: 微軟正黑體;
-	color: white;
-	font-size: 2em;
-	position: absolute;
-	line-height: 1.5em;
-	top: -3%;
-	right: 10%;
+    font-family: 微軟正黑體;
+    color: red;
+    font-size: 2em;
+    position: absolute;
+    line-height: 1.2em;
+    top: 28%;
+    left: 45%;
+    letter-spacing: 0.2em;
 }
 
 @media (max-width: 767px){
