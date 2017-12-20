@@ -347,6 +347,17 @@ a:focus {
 	background-image: url(../img/aips2-18.png);
 }
 
+.slogan{
+	z-index: 2000;
+	font-family: 微軟正黑體;
+	color: white;
+	font-size: 2em;
+	position: absolute;
+	line-height: 1.5em;
+	top: -3%;
+	right: 10%;
+}
+
 @media (max-width: 767px){
 
 	#logo{
@@ -370,7 +381,13 @@ a:focus {
     font-size: 1.7em;
 	}
 	.slogan{
-		display: none;
+	z-index: 2000;
+    font-family: 微軟正黑體;
+    color: red;
+    font-size: 2.2em;
+    font-weight: 600;
+    top: 15%;
+    letter-spacing: 0.2em;
 	}
 	.Exhibition{
 		display: none;
@@ -745,16 +762,7 @@ a:focus {
     top: -20%;
 	right: 0;
 }
-.slogan{
-	z-index: 2000;
-	font-family: 微軟正黑體;
-	color: white;
-	font-size: 2em;
-	position: absolute;
-	line-height: 1.5em;
-	top: -3%;
-	right: 10%;
-}
+
 .about_text{
 	z-index: 2000;
 	font-family: 微軟正黑體;
