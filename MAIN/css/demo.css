@@ -63,6 +63,19 @@ a:focus {
 	display: none;
 }
 
+.aibutton{   
+	position: absolute;
+    right: 10%;
+    bottom: 45%;
+	display: none;
+}
+.psbutton{
+	display: none;
+	position: absolute;
+    right: 10%;
+    top: 28%;
+}
+
 .view {
 	position: relative;
 	display: flex;
@@ -427,6 +440,14 @@ a:focus {
 		display: block;
 	}
 	
+	.aibutton{   
+	display: block;
+	}
+	.psbutton{
+		display: block;
+
+	}
+	
 	#logo_phone{
 	margin-top: 0%;
     display: block;
@@ -657,11 +678,6 @@ a:focus {
   right: 10%;
   bottom: 7%;
 }
-.aiicon{
-  position:absolute;
-  right: 32%;
-  bottom: 18%;
-}
 .button_2 span {
 	letter-spacing: 0.2em;
   -webkit-transition: 0.6s;
@@ -807,13 +823,4 @@ color: #48abff;
     top: 0;
     left: 20%;
     z-index: 5000;
-}
-.aibutton{   
-	position: absolute;
-    right: 10%;
-    bottom: 45%;}
-.psbutton{
-	position: absolute;
-    right: 10%;
-    top: 28%;
 }
