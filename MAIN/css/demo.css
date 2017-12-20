@@ -431,7 +431,7 @@ a:focus {
 
 	}
 	.demo-2 {
-		background-image: url(https://i.imgur.com/DSEqlIb.png);
+		background-image: url(../img/index_bg_moblie.png);
 		background-size: cover;
 	}
 	.demo-2 .content {
@@ -796,4 +796,9 @@ color: #48abff;
     top: 0;
     left: 20%;
     z-index: 5000;
+}
+
+#logo_phone{
+	    margin-top: 10%;
+    margin-left: 10%;
 }
