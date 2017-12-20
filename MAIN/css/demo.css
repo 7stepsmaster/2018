@@ -41,6 +41,12 @@ a:focus {
 #about_phone{
 	display: none;
 }
+
+#logo_phone{
+	margin-top: 10%;
+    margin-left: 10%;
+	display: none;
+}
 .Exhibition_phone{
 	display: none;
 }
@@ -344,7 +350,7 @@ a:focus {
 	color: #fff;
 }
 .tabscontent__item_1{
-	background-image: url(../img/aips2-18.png);
+	
 }
 
 .slogan{
@@ -397,7 +403,7 @@ a:focus {
 		display: block;
 		position: absolute;
 		left: 0;
-		bottom: 0;
+		top: 0;
 	}
 	.Team{
 		display: none;
@@ -421,7 +427,11 @@ a:focus {
 		display: block;
 	}
 	
-	
+	#logo_phone{
+	margin-top: 10%;
+    margin-left: 10%;
+	display: block;
+}
 	
 	.view {
 		overflow: auto;
@@ -796,9 +806,4 @@ color: #48abff;
     top: 0;
     left: 20%;
     z-index: 5000;
-}
-
-#logo_phone{
-	    margin-top: 10%;
-    margin-left: 10%;
 }
