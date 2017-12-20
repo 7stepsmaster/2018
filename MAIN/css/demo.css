@@ -428,9 +428,10 @@ a:focus {
 	}
 	
 	#logo_phone{
-	margin-top: 10%;
-    margin-left: 10%;
-	display: block;
+	margin-top: 0%;
+    display: block;
+    left: -10%;
+    position: absolute;
 }
 	
 	.view {
@@ -806,4 +807,13 @@ color: #48abff;
     top: 0;
     left: 20%;
     z-index: 5000;
+}
+.aibutton{   
+	position: absolute;
+    right: 10%;
+    bottom: 45%;}
+.psbutton{
+	position: absolute;
+    right: 10%;
+    top: 28%;
 }
