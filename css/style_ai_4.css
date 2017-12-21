@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /*跨瀏覽器*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -480,6 +480,7 @@ transform: scale(2);
 	color:black;
 	font-size: 16px;
 	letter-spacing: 2px;
+	text-align: center;
 }
 
 
@@ -882,6 +883,7 @@ a.btn-cta-primary,
 }	
 .nav.navbar-nav.navbar-right a{	
 	color:black;
+	text-align: center;
 }	
 .dropdown-menu{
 	background-color:rgba(244,90,71,1);
