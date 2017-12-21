@@ -75,6 +75,15 @@ a:focus {
     right: 10%;
     top: 28%;
 }
+.slogan_phone{
+	display: none;
+	 position: absolute;
+    line-height: 1.2em;
+    top: 28%;
+    left: 42%;
+    letter-spacing: 0.15em;
+}
+
 
 .view {
 	position: relative;
@@ -401,9 +410,14 @@ a:focus {
     font-size: 1.7em;
 	}
 	.slogan{
+	display: none;
+   
+	}
+	.slogan_phone{
+	display: block;
+	color: #F45A47;
 	z-index: 2000;
     font-family: 微軟正黑體;
-    color: red;
     font-size: 2.2em;
     font-weight: 600;
     top: 15%;
