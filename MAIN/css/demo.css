@@ -840,3 +840,24 @@ color: #48abff;
     left: 20%;
     z-index: 500;
 }
+
+
+@media (min-width: 768px) and (max-width: 991px){
+	.Team_phone{
+		display: block;
+	}
+	.Team{
+		display: none;
+	}
+	#about_phone {
+    display: block;
+    position: absolute;
+    top: -10%;
+    right: 0;
+	}
+	.about{
+		display: none;
+	}
+	
+	
+}
