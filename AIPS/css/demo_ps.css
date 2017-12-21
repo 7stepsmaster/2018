@@ -314,7 +314,8 @@ transition: all 1s ease;
     height: 10%;
 }
 	.footer p{
-		font-size: 16px;
+		font-size: 16px;	
+  	    margin: 8px 0;
 	}
 
 }
