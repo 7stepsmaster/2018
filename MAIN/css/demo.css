@@ -66,8 +66,9 @@ a:focus {
 .aibutton{   
 	position: absolute;
     right: 10%;
-    bottom: 45%;
+    top: 30%;
 	display: none;
+	margin-top: 50%;
 }
 .psbutton{
 	display: none;
@@ -837,5 +838,5 @@ color: #48abff;
 	position: fixed;
     top: 0;
     left: 20%;
-    z-index: 5000;
+    z-index: 500;
 }
