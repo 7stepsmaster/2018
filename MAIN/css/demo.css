@@ -843,6 +843,10 @@ color: #48abff;
 
 @media (min-width: 768px) and (max-width: 991px){
 	
+
+	.Exhibition {
+    width: 100%;
+}
 	
 	
 	.Team_phone{
