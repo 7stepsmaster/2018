@@ -843,6 +843,9 @@ color: #48abff;
 
 
 @media (min-width: 768px) and (max-width: 991px){
+	
+	
+	
 	.Team_phone{
 		display: block;
 	}
@@ -854,10 +857,37 @@ color: #48abff;
     position: absolute;
     top: -10%;
     right: 0;
+	width: 100%;
 	}
 	.about{
 		display: none;
 	}
+	
+	.slogan {
+    z-index: 2000;
+    font-family: 微軟正黑體;
+    color: rgb(244, 90, 71);
+    font-size: 2.2em;
+	font-weight: 500;
+    position: absolute;
+    line-height: 1.2em;
+    top: 25%;
+    left: 40%;
+    letter-spacing: 0.15em;
+}
+	
+	.about_text {
+    z-index: 2000;
+    font-family: 微軟正黑體;
+    font-size: 1.5em;
+    display: block;
+    width: 80%;
+    letter-spacing: 0.2em;
+    line-height: 1.5em;
+    position: absolute;
+    top: 45%;
+    right: 5%;
+}
 	
 	
 }
