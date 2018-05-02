@@ -15,6 +15,9 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+
+
+
 .button-menu  a { 
 	outline: none;
 	color: white;
@@ -221,7 +224,7 @@ transition: all 1s ease;
 
 
 
-@media screen and (max-width: 50em) {
+@media (max-width: 767px) {
 	.codrops-header {
 		width: 80%;
 	}
@@ -320,4 +323,47 @@ transition: all 1s ease;
 	}
 
 
+}
+
+/***************************************************************平板*/
+@media (min-width: 768px) and (max-width: 991px){
+	
+	element.style {
+    position: fixed;
+    transform-style: preserve-3d;
+    transform: translateX(-15vw) translateY(275px) rotateX(45deg) rotateZ(25deg);
+}
+	
+	
+	
+	.button_download_phone {
+    display: none;
+    color: #ffffff;
+    background: #F45A47;
+    border: 0px solid #ffffff;
+    border-radius: 25px 25px 25px 25px;
+    -moz-border-radius: 25px 25px 25px 25px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+    padding: 5px 0px;
+    width: 25%;
+    text-align: center;
+}
+	.interval__text {
+    padding-right: 0;
+    font-family: 微軟正黑體;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    color: #777792;
+    margin-top: 2.5em;
+}
+	
+.ps{
+	display: none;
+	}
+	.isolayer.isolayer--scroll1 {
+		top: -20vh;
+	}
+	
+	
 }
