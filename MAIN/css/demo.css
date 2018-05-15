@@ -842,6 +842,20 @@ color: #48abff;
 
 
 @media (min-width: 768px) and (max-width: 991px){
+	.aibutton{   
+	position: absolute;
+    right: 10%;
+    top: 27%;
+	display: none;
+	margin-top: 50%;
+}
+.psbutton{
+	display: none;
+	position: absolute;
+    right: 10%;
+    top: 25%;
+}
+
 	
 
 	.Exhibition {
@@ -858,7 +872,7 @@ color: #48abff;
 	#about_phone {
     display: block;
     position: absolute;
-    top: -10%;
+    top: 0%;
     right: 0;
 	width: 100%;
 	}
