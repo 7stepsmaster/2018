@@ -842,23 +842,18 @@ color: #48abff;
 
 
 @media (min-width: 768px) and (max-width: 991px){
-	.aibutton{   
-	position: absolute;
-    right: 10%;
-    top: 27%;
-	display: none;
-	margin-top: 50%;
-}
-.psbutton{
-	display: none;
-	position: absolute;
-    right: 10%;
-    top: 25%;
-}
+	
+		.button{
+		bottom: 20%;
+	}
 
+	.button_2{
+		bottom: 12%;
+	}
 	
-	
-	
+	#logo{
+		margin-top: -20%;
+	}
 	
 	
 	
